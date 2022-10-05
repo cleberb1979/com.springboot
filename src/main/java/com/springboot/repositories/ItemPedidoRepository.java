@@ -1,4 +1,11 @@
 package com.springboot.repositories;
 
-public interface ItemPedidoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.springboot.domain.ItemPedido;
+
+@Repository
+public interface ItemPedidoRepository extends JpaRepository<ItemPedido, Integer> {
+
 }
